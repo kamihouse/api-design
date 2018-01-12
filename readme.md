@@ -12,6 +12,8 @@ Detalhes: http://coderi.com.br/2018/01/11/design-de-apis-modernas/
 
 ### Comandos
 * `npm install` - Instala dependências p/ desenvolvimento.
+
+
 * `npm run dev` - Inicia o servidor de desenvolvimento.
 * `npm run mock` - Inicia o servidor de simulação.
 * `npm run test` - Executa testes HTTP automatizados.
