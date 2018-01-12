@@ -1,0 +1,24 @@
+{
+  "name": "api-design",
+  "version": "1.0.0",
+  "description": "Design de API modernas by Coderi : Inteligência Empresarial",
+  "homepage": "http://coderi.com.br",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/aglio/bin/aglio.js -i src/index.apib -t vinila --theme-template triple --theme-full-width -h 0.0.0.0 -s",
+    "mock": "./node_modules/aglio/bin/aglio.js -i src/index.apib -o mock/index.apib && ./node_modules/drakov/drakov -f mock/index.apib --public --watch -p 4000",
+    "test" : "./node_modules/aglio/bin/aglio.js -i src/index.apib -o mock/index.apib && ./node_modules/dredd/bin/dredd mock/index.apib http://127.0.0.1:4000/",
+    "build": "./node_modules/aglio/bin/aglio.js -i src/index.apib -t flatly --theme-template triple --theme-full-width -o dist/index.html"
+  },
+  "author": {
+    "mame": "Thiago Pereira Rosa",
+    "email": "thiagor@engineer.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "aglio": "^2.3.0",
+    "aglio-theme-vinila": "0.0.15",
+    "drakov": "^1.0.4",
+    "dredd": "^4.9.2"
+  }
+}

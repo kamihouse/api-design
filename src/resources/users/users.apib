@@ -1,0 +1,53 @@
+# Group Usuários
+Recurso para manipular usuários no sistema.
+
+
+## Coleção de usuários [/usuarios]
+Essa sessão especifica os endpoints para trabalhar com coleção de usuários.
+
+### Lista usuários [GET]
+Projeta uma coleção com os usuários do sistema.
+
++ Response 200 (application/json; charset=utf-8)
+    + Attributes
+        + data (array[dsUsuariosResponse], fixed-type)
+
+### Adiciona usuário [POST]
+Adiciona um novo usuário ao sitema.
+
++ Request (application/json)
+    + Attributes (dsUsuariosRequest)
+
++ Response 201 (application/json; charset=utf-8)
+    + Attributes (dsUsuariosResponse)
+
+
+## Usuário [/usuarios/{id}]
+Essa sessão especifica o endepoint de usuário identificado pelo ID.
+
++ Parameters
+    + id: 1 (number, required) - ID do usuário
+
+### Exibe usuário [GET]
+Projeta um usuário identificado pelo ID.
+
++ Response 200 (application/json; charset=utf-8)
+    + Attributes (dsUsuariosResponse)
+
+### Altera usuário [PUT]
+Altera um usuário identificado pelo ID.
+
++ Request (application/json)
+    + Attributes (dsUsuariosRequest)
+
++ Response 200 (application/json; charset=utf-8)
+    + Attributes (dsUsuariosResponse)
+
+### Deleta usuário [DELETE]
+Deleta um usuário identificado pelo ID.
+
++ Response 204
+
+
+# Data Structures
+<!-- include(ds_users.apib) -->

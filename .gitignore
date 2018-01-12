@@ -1,0 +1,11 @@
+.npm
+.npmrc
+.env
+.grunt
+.idea
+.DS_Store
+
+dist/*
+mock/*
+node_modules
+npm-debug.log

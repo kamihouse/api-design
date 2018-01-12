@@ -1,0 +1,10 @@
+## dsUsuariosRequest
++ username: `admin` (required, string) - Nome de usuário
++ password: `*****` (required, string) - Senha de usuário
++ nome_completo: `Administrador` (required, string) - Nome completo
++ data_nascimento: `12/11/1984` (optional, string) - Data de nascimento
++ sexo: `masculino`, `feminino` (required, enum) - Sexo do usuário
+
+## dsUsuariosResponse
++ id: 1 (required, number) - ID do usuário
++ Include (dsUsuariosRequest)
